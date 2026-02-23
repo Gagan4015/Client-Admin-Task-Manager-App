@@ -4,6 +4,9 @@ import Login from "./pages/Login";
 import TaskDashboard from "./pages/TaskDashboard";
 import toast, { Toaster } from "react-hot-toast";
 function App() {
+  useEffect(() => {
+  axios.get("https://client-admin-task-manager-app-backend.onrender.com");
+}, []);
   return (
     <div >
       <Toaster />

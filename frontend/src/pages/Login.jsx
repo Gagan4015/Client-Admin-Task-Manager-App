@@ -14,13 +14,15 @@ export default function Login() {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+     const toastId = toast.loading("Server waking up... Please wait ⏳");
     try {
       if (currentState === "SignUp") {
         const response = await axios.post(backendURL + "/api/auth/register", {
           name,
           email,
           password,
-        });
+        }, { timeout: 60000 } // 60 seconds timeout
+        );
 
         if (response.data.success) {
           setToken(response.data.token);
@@ -33,7 +35,8 @@ export default function Login() {
         const response = await axios.post(backendURL + "/api/auth/login", {
           email,
           password,
-        });
+        }, { timeout: 60000 } // 60 seconds timeout
+      );
         if (response.data.success) {
           setToken(response.data.token);
           localStorage.setItem("token", response.data.token);
