@@ -28,7 +28,8 @@ export default function Login() {
           setToken(response.data.token);
 
           localStorage.setItem("token", response.data.token);
-          toast.success("Login successful 🎉", { id: toastId });
+          toast.dismiss(toastId);
+          toast.success("Login successful 🎉");
 
         } else {
           toast.error(response.data.message);
@@ -45,7 +46,8 @@ export default function Login() {
 
           setUser(response.data.user);
           localStorage.setItem("user", JSON.stringify(response.data.user));
-          toast.success("Login successful 🎉", { id: toastId });
+          toast.dismiss(toastId);
+          toast.success("Login successful 🎉");
 
 
         } else {
