@@ -9,6 +9,10 @@ A MERN stack task management application with role-based access for clients and 
 - Secure authentication with JWT
 - Role-based access for users and admin
 
+## Admin id & password
+   ID: admin@gmail.com
+   pass: 00000000 (8 times zero)
+
 ## Client / User Features
 
 - Create Tasks – Users can add new tasks.
