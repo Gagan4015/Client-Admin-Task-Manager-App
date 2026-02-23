@@ -7,6 +7,7 @@ A MERN stack task management application with role-based access for clients and 
 - Filter tasks by status (All / Pending / Completed)
 - Secure authentication with JWT
 - Role-based access for users and admin
+- Password Hashing using Bcrypt
 
 ## Website URL : https://client-admin-task-manager-app.onrender.com
 
