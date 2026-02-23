@@ -3,18 +3,19 @@
 A MERN stack task management application with role-based access for clients and admin.
 
 ## Features
-
 - Create, update, delete, and toggle tasks
 - Filter tasks by status (All / Pending / Completed)
 - Secure authentication with JWT
 - Role-based access for users and admin
+- Password Hashing using Bcrypt
+
+## Website URL : https://client-admin-task-manager-app.onrender.com
 
 ## Admin id & password
    ID: admin@gmail.com
    pass: 00000000 (8 times zero)
 
 ## Client / User Features
-
 - Create Tasks – Users can add new tasks.
 - Update Tasks – Users can edit only their own tasks.
 - Delete Tasks – Users can delete only their own tasks.
