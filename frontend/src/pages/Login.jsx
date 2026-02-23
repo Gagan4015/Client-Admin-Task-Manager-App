@@ -32,6 +32,7 @@ export default function Login() {
           toast.success("Login successful 🎉");
 
         } else {
+          toast.dismiss(toastId);
           toast.error(response.data.message);
         }
       } else {
@@ -51,10 +52,12 @@ export default function Login() {
 
 
         } else {
+          toast.dismiss(toastId);
           toast.error(response.data.message);
         }
       }
     } catch (error) {
+      toast.dismiss(toastId);
       toast.error(error.message);
       console.log(error);
     }
